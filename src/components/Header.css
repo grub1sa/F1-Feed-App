@@ -1,0 +1,29 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#35333E;
+    color: white;
+}
+.header h1{
+    margin:0;
+    margin-right:1em ;
+    
+    
+}
+.header div{
+    font-size: 1.35em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+}
+.header label{
+    width: 25%;
+    
+    text-align: center;
+}
+.header select{
+    width: 70%;
+    height: 3vh;
+}
