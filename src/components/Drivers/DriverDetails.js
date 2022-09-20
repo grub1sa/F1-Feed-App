@@ -23,7 +23,8 @@ const DriverDetails = () => {
     //getyear
 
     const getData = async (id, year, driverName) => {
-        const [details, races, image] = await fetchDriverData(id, year, driverName);
+        const [image,details, races] = await fetchDriverData(id, year, driverName);
+        
         setDetails(
             details.MRData.StandingsTable.StandingsLists[0].DriverStandings[0].Driver
         );

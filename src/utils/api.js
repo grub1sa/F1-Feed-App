@@ -45,9 +45,10 @@ export const fetchResults = (year,id) => {
 
 export const fetchDriverData = (id, year, driverName) => {
     return Promise.all([
+        fetchDriverImage(driverName),
         fetchDriverDetail(id, year),
-        fetchDriverRaces(id, year),
-        fetchDriverImage(driverName)
+        fetchDriverRaces(id, year)
+       
         
         
     ])
